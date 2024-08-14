@@ -1,0 +1,10 @@
+DROP TABLE odontologos IF EXISTS;
+
+CREATE TABLE IF NOT EXISTS odontologos (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    numero_matricula VARCHAR(255) NOT NULL,
+    nombre VARCHAR(255) NOT NULL,
+    apellido VARCHAR(255) NOT NULL
+);
+
+INSERT INTO odontologos VALUES (DEFAULT, '12345','JUAN','RAMIREZ');
